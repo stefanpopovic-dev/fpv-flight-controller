@@ -27,6 +27,12 @@ An open-hardware, 4-layer FPV flight controller board built around the **STM32F4
 |---|---|
 | ![Top copper](docs/images/TOPCOPPER.png) | ![Bottom copper](docs/images/BOTTOMCOPPER.png) |
 
+## Schematic
+
+![Schematic](docs/images/SCHEMATIC.png)
+
+Full-resolution PDF: [`SCHEMATIC_PDF/REV3.pdf`](SCHEMATIC_PDF/REV3.pdf)
+
 ## Connector map
 
 Reference the top-side silkscreen (visible in the top 3D render above) for exact pad locations. Grouped by function:
@@ -53,8 +59,10 @@ Reference the top-side silkscreen (visible in the top 3D render above) for exact
 │   ├── REV3.kicad_pcb
 │   ├── REV3.kicad_prl
 │   └── fp-lib-table
+├── SCHEMATIC_PDF/
+│   └── REV3.pdf         Exported schematic PDF
 └── docs/
-    └── images/          3D renders and copper layer renders
+    └── images/          3D renders, copper layer renders, schematic export
 ```
 
 ## Opening the project
@@ -65,6 +73,15 @@ The design was created in **KiCad 10.0**. Open `hardware/REV3.kicad_pro` in KiCa
 
 - This repository currently contains the hardware design only (schematic + PCB). No firmware is included yet — the pinout is intended to be compatible with common open-source flight controller firmware (e.g. Betaflight/iNav) via a custom unified target.
 - DRC exclusions present in the board file are inherited from the source project and should be reviewed before fabrication.
+
+## ⚠️ Disclaimer
+
+**This exact revision (REV3) has not been manufactured or tested yet.** It is a corrected revision of a previously manufactured and tested board, so it is very similar to a known-working unit but has not itself been built/verified. The fixes made since the last manufactured/tested version:
+
+- The barometer (DPS310) was not connected to 3.3V — fixed.
+- The boot/reset button was tied high and did not function — fixed.
+
+Real photos of the assembled, tested board will be added once this revision is built.
 
 ## License
 
