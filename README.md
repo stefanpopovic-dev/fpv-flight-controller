@@ -85,4 +85,4 @@ Real photos of the assembled, tested board will be added once this revision is b
 
 ## License
 
-No license has been chosen yet for this hardware design. All rights reserved by default until a license is added — open an issue if you'd like to use or fork this design.
+Licensed under the [CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S v2)](LICENSE). Anyone who manufactures or modifies this design must make their modified source available under the same licence.
