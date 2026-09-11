@@ -29,9 +29,9 @@ An open-hardware, 4-layer FPV flight controller board built around the **STM32F4
 
 ## Schematic
 
-![Schematic](docs/images/SCHEMATIC.png)
+![Schematic](SCHEMATIC_SVG/REV3.svg)
 
-Full-resolution PDF: [`SCHEMATIC_PDF/REV3.pdf`](SCHEMATIC_PDF/REV3.pdf)
+Also available as [PDF](SCHEMATIC_PDF/REV3.pdf) and [SVG](SCHEMATIC_SVG/REV3.svg).
 
 ## Connector map
 
@@ -61,8 +61,10 @@ Reference the top-side silkscreen (visible in the top 3D render above) for exact
 │   └── fp-lib-table
 ├── SCHEMATIC_PDF/
 │   └── REV3.pdf         Exported schematic PDF
+├── SCHEMATIC_SVG/
+│   └── REV3.svg         Exported schematic SVG (vector)
 └── docs/
-    └── images/          3D renders, copper layer renders, schematic export
+    └── images/          3D renders and copper layer renders
 ```
 
 ## Opening the project
