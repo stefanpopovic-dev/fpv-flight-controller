@@ -1,6 +1,6 @@
 # STM32F405 FPV Flight Controller
 
-An open-hardware, 4-layer FPV flight controller board built around the **STM32F405RGT6**, designed in KiCad. Currently at hardware revision **REV3**. Designed to run **Betaflight**.
+An open-hardware, 4-layer FPV flight controller board built around the **STM32F405RGT6**, designed in KiCad. Currently at hardware revision **REV3**. Runs custom firmware.
 
 ## 3D renders
 
@@ -71,20 +71,20 @@ Reference the top-side silkscreen (visible in the top 3D render above) for exact
 
 The design was created in **KiCad 10.0**. Open `hardware/REV3.kicad_pro` in KiCad to view/edit the schematic and PCB.
 
-## Firmware compatibility
+## Firmware
 
-Built for **Betaflight**. Every IC on this board is natively supported by Betaflight:
+This board runs custom firmware.
 
-- STM32F405RGT6 — supported target MCU family
-- ICM-42688-P — supported gyro/accelerometer
-- MAX7456 — supported OSD chip
-- W25Q128JVP — supported blackbox flash
+<details>
+<summary>Betaflight compatibility</summary>
 
-Since this is a custom PCB (not a stock/off-the-shelf target), it needs a **custom unified target** in Betaflight Configurator with resource mapping matching this schematic's pin assignments: gyro on SPI1 (`PA5`/`PA6`/`PA7`, CS `PA4`), OSD on SPI2 (`PB12`/`PB14`/`PB15`, CS `PB11`), blackbox flash on SPI3 (`PB3`/`PB4`/`PB5`, CS `PA15`), motors `M1`–`M4` on `PB0`/`PB1`/`PC6`/`PC7`, and UART1/2/3/5 as broken out on the connectors above — see the schematic for the full pin list. No target file is included in this repo yet.
+Every IC on this board is natively supported by Betaflight (STM32F405RGT6, ICM-42688-P, MAX7456, W25Q128JVP), so it's Betaflight-compatible hardware if you'd rather flash that instead. Since this is a custom PCB (not a stock/off-the-shelf target), that would require a **custom unified target** in Betaflight Configurator with resource mapping matching this schematic's pin assignments: gyro on SPI1 (`PA5`/`PA6`/`PA7`, CS `PA4`), OSD on SPI2 (`PB12`/`PB14`/`PB15`, CS `PB11`), blackbox flash on SPI3 (`PB3`/`PB4`/`PB5`, CS `PA15`), motors `M1`–`M4` on `PB0`/`PB1`/`PC6`/`PC7`, and UART1/2/3/5 as broken out on the connectors above — see the schematic for the full pin list. No Betaflight target file is included in this repo.
+
+</details>
 
 ## Status / notes
 
-- This repository currently contains the hardware design only (schematic + PCB). No firmware/target file is included yet.
+- This repository currently contains the hardware design only (schematic + PCB). The custom firmware for this board lives outside this repo.
 - DRC exclusions present in the board file are inherited from the source project and should be reviewed before fabrication.
 
 ## ⚠️ Disclaimer
