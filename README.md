@@ -23,17 +23,17 @@ An open-hardware, 4-layer FPV flight controller board built around the **STM32F4
 - **I/O:** 5 UARTs broken out (UART1, UART2, UART3, UART5), 4 motor signal outputs (M1–M4), current sensor input, buzzer, status LED, boot/reset button, SWD programming header, and general purpose AUX/GPIO pads
 - **Board:** 4-layer stack-up (signal / GND plane / power plane / signal)
 
-## PCB layout (copper layers)
-
-| Top copper | Bottom copper |
-|---|---|
-| ![Top copper](docs/images/TOPCOPPER.png) | ![Bottom copper](docs/images/BOTTOMCOPPER.png) |
-
 ## Schematic
 
 ![Schematic](docs/images/SCHEMATIC.png)
 
 Full-resolution PDF: [`SCHEMATIC_PDF/REV3.pdf`](SCHEMATIC_PDF/REV3.pdf)
+
+## PCB layout (copper layers)
+
+| Top copper | Bottom copper |
+|---|---|
+| ![Top copper](docs/images/TOPCOPPER.png) | ![Bottom copper](docs/images/BOTTOMCOPPER.png) |
 
 ## Connector map
 
