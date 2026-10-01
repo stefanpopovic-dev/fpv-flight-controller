@@ -19,7 +19,7 @@ An open-hardware, 4-layer FPV flight controller board built around the **STM32F4
 
 ## Real build photos
 
-These photos are of the **previous manufactured and flight-tested revision** of this board (see the Disclaimer section below for what changed in REV3).
+These photos are of the **previous manufactured and tested revision** of this board (see the Disclaimer section below for what changed in REV3).
 
 | Top | Bottom |
 |---|---|
