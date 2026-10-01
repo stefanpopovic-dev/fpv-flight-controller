@@ -2,12 +2,32 @@
 
 An open-hardware, 4-layer FPV flight controller board built around the **STM32F405RGT6**, designed in KiCad. Currently at hardware revision **REV3**. Designed to run **Betaflight**.
 
+## Flight video
+
+> 🎥 **Flight video coming soon.**
+>
+> <!-- Replace this block with the video. Easiest option: edit this README on github.com and drag-and-drop an .mp4 here
+>      (GitHub embeds it inline), or link a YouTube video with a thumbnail:
+>      [![Flight video](docs/images/photos/quad_front.jpg)](https://www.youtube.com/watch?v=VIDEO_ID) -->
+
 ## 3D renders
 
 <p align="center">
   <img src="docs/images/TOP_RENDER.png" width="47%" alt="Top 3D render">
   <img src="docs/images/BOTTOM_RENDER.png" width="47%" alt="Bottom 3D render">
 </p>
+
+## Real build photos
+
+These photos are of the **previous manufactured and tested revision** of this board (see the Disclaimer section below for what changed in REV3).
+
+| Top | Bottom |
+|---|---|
+| ![Assembled board, top side](docs/images/photos/board_top.jpg) | ![Assembled board, bottom side](docs/images/photos/board_bottom.jpg) |
+
+| Installed in the frame | Finished quad (top) | Finished quad (front) |
+|---|---|---|
+| ![Board wired up in the quad frame](docs/images/photos/board_installed.jpg) | ![Completed quad, top view](docs/images/photos/quad_top.jpg) | ![Completed quad, front view with camera](docs/images/photos/quad_front.jpg) |
 
 ## Features
 
@@ -65,6 +85,7 @@ Reference the top-side silkscreen (visible in the top 3D render above) for exact
 │   └── REV3.pdf         Exported schematic PDF
 └── docs/
     └── images/          3D renders, copper layer renders, schematic export
+        └── photos/      Real photos of the built board and quad
 ```
 
 ## Opening the project
@@ -94,7 +115,7 @@ Since this is a custom PCB (not a stock/off-the-shelf target), it needs a **cust
 - The barometer (DPS310) was not connected to 3.3V — fixed.
 - The boot/reset button was tied high and did not function — fixed.
 
-Real photos of the assembled, tested board will be added once this revision is built.
+The [real build photos](#real-build-photos) above show that previous tested revision; photos of a REV3 unit will be added once it is built.
 
 ## License
 
